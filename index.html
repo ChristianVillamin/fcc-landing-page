@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Come Fly With Me</title>
+  </head>
+  <body>
+    <header id="header">
+      <img src="./images/biplane_logo.png" alt="biplane-logo" id="header-img" />
+
+      <nav id="nav-bar">
+        <a href="#header" class="nav-link">Home</a>
+        <a href="#biplanes" class="nav-link">Biplanes</a>
+        <a href="#locations" class="nav-link">Locations</a>
+        <a href="#experience" class="nav-link">Experience</a>
+      </nav>
+
+      <h1 id="title">Come Fly With Me!</h1>
+
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input
+          name="email"
+          id="email"
+          type="email"
+          placeholder="Enter your email address..."
+          required
+        />
+        <input id="submit" type="submit" />
+      </form>
+    </header>
+
+    <main>
+      <div class="second-bg">
+        <div class="shadow-bg">
+          <section class="biplanes" id="biplanes">
+            <h1>Choose Your Biplane!</h1>
+            <p class="subtext">
+              All three awesome biplanes we have are available. They are all
+              winners!
+            </p>
+            <div id="biplanes-grid">
+              <div class="grid">
+                <img
+                  src="./images/biplane-green.jpg"
+                  alt=""
+                  width="200px"
+                  id="biplane-green"
+                />
+                <div class="biplane-description">
+                  <h3>Gallant Green</h3>
+                  <p>
+                    The new added biplane to our collection! Equipped with the
+                    newest plane engine for an even smoother experience.
+                  </p>
+                </div>
+              </div>
+              <div class="grid">
+                <img
+                  src="./images/biplane-white.jpg"
+                  alt=""
+                  width="200px"
+                  id="biplane-white"
+                />
+                <div class="biplane-description">
+                  <h3>Windswept White</h3>
+                  <p>
+                    This model has been tested through time! It has been with us
+                    since we first started and has been a collection to wonder.
+                  </p>
+                </div>
+              </div>
+              <div class="grid">
+                <img
+                  src="./images/biplane_blue.jpg"
+                  alt=""
+                  width="200px"
+                  id="biplane-blue"
+                />
+                <div class="biplane-description">
+                  <h3>Ballistic Blue</h3>
+                  <p>
+                    An instant classic of ours! A biplane of favorite as it
+                    blends beautifully with the sky and become one with the
+                    clouds.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="locations" id="locations">
+            <h1>Where To Travel?</h1>
+            <p class="subtext">
+              Even though biplanes are the 1st generation planes, today they are
+              now upgraded internals while using the same old nostalgic design
+              that captures the same feeling!
+            </p>
+            <div id="locations-container">
+              <div id="location-bg-countryside">
+                <div class="location" id="local">
+                  <div class="travel-image">
+                    <img src="./images/fly_local.png" alt="" />
+                    <h2>Countryside</h2>
+                  </div>
+
+                  <div class="travel-description">
+                    <p id="paragraph">
+                      Fly around the mountains and soar through the sky! Touch
+                      the clouds and feel the freedom!
+                    </p>
+                    <div class="detail">
+                      <p><b>Cost:</b> 2 Tuppence</p>
+                      <p><b>Duration:</b> 1 to 2 Hours</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="location-bg-country">
+                <div class="location" id="country">
+                  <div class="travel-image">
+                    <img src="./images/fly_country2.png" alt="" />
+                    <h2>City</h2>
+                  </div>
+
+                  <div class="travel-description">
+                    <p id="paragraph">
+                      Style your way around the buildings of the city! See
+                      yourself flying through the mirror walls of skyscrapers.
+                    </p>
+                    <div class="detail">
+                      <p><b>Cost:</b> High Five</p>
+                      <p><b>Duration:</b> 1 to 2 Hours</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="location-bg-world">
+                <div class="location" id="world">
+                  <div class="travel-image">
+                    <img src="./images/fly_world.png" alt="" />
+                    <h2>Free Roam</h2>
+                  </div>
+
+                  <div class="travel-description">
+                    <p id="paragraph">
+                      Fly anywhere you desire and travel all you like and still
+                      be home in time for tea! So what do you say? Above the
+                      forest, ocean, pyramids, you name it!
+                    </p>
+                    <div class="detail">
+                      <p><b>Cost:</b> Your Time</p>
+                      <p><b>Duration:</b> All Day</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div id="experience-bg">
+        <section class="experience" id="experience">
+          <h1>The Experience</h1>
+          <p>
+            I have been flying biplanes for 30 years to share the experience
+            with people. It is an experience you must try at least once in your
+            life time. Even though biplanes are the 1st generation planes, today
+            they are now upgraded internals while using the same old nostalgic
+            design that captures the same feeling and enjoyment!
+          </p>
+
+          <div id="video-container">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/W1zid0tMHHc"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              id="video"
+            ></iframe>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        Mockup only by @villamin_c | A Landing Page challenge by freeCodeCamp.
+      </p>
+    </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+/* -- HEADER -- */
+#header {
+  position: relative;
+  height: 100vh;
+  background: url('./images/biplane_bg.jpeg');
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+
+#header #header-img {
+  position: fixed;
+  top: 0;
+  margin: 3px 0 0 2vw;
+  height: 30px;
+  width: auto;
+}
+
+#header #nav-bar {
+  position: fixed;
+  display: flex;
+  top: 0;
+
+  background: rgba(0, 0, 0, 0.35);
+  width: 100%;
+
+  justify-content: center;
+  padding: 5px 0 5px 0;
+}
+
+#header #nav-bar .nav-link {
+  padding: 0 3vw 0 3vw;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  transition: all 0.25s ease;
+}
+
+#header #nav-bar .nav-link:hover {
+  color: lightblue;
+  text-decoration: underline;
+}
+
+#header #title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 50px;
+  color: white;
+  text-shadow: 0px 0px 1vw #000;
+  opacity: 0.85;
+  text-align: center;
+  border: 3px pink solid;
+  width: 80%;
+}
+
+#header form {
+  position: absolute;
+  text-align: center;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#header form #email {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 25vw;
+  min-width: 100px;
+  max-width: 250px;
+}
+
+#header form #submit {
+  background: rgba(0, 0, 0, 0);
+  width: 15vw;
+  min-width: 150px;
+  max-width: 150px;
+  height: 30px;
+  color: white;
+  border: 2px solid lightblue;
+  transition: all 0.3s ease;
+  font-weight: 800;
+}
+
+#header form #submit:hover {
+  transform: scale(1.1);
+  background: white;
+  color: black;
+  border: none;
+}
+
+/* -- SECTIONS -- */
+section {
+  padding: 2% 0 2% 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section h1 {
+  font-size: 50px;
+  text-shadow: 0 0 #111;
+  color: black;
+}
+
+.subtext {
+  padding: 0 10px 0 10px;
+  text-align: center;
+  color: gray;
+}
+
+.shadow-bg {
+  background: white;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px #333;
+}
+
+.second-bg {
+  background: url('./images/cloud_bg2.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  border-top: 5px lightblue solid;
+  border-bottom: 5px lightblue solid;
+}
+
+/* -- SERVICES -- */
+#biplanes #biplanes-grid {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.grid {
+  background: url('./images/cloud_bg.jpg');
+  background-size: cover;
+  border-radius: 5%;
+  margin-left: 10%;
+  width: 80%;
+  padding: 30px 0 0 0;
+  box-shadow: 0 0 4px #333;
+  transition: all 0.3s ease;
+}
+
+.grid:hover {
+  transform: scale(1.05);
+  filter: saturate(200%);
+}
+
+.grid img {
+  border-radius: 50%;
+  width: 14vw;
+  height: 14vw;
+  max-width: 250px;
+  max-height: 250px;
+
+  object-fit: cover;
+  filter: saturate(75%);
+  transition: all 0.5s ease;
+  margin-bottom: 10px;
+}
+
+.grid h3 {
+  padding: 10px 0 10px 0;
+}
+
+.grid p {
+  width: 80%;
+  margin-left: 10%;
+  text-align: justify;
+}
+
+.grid img {
+  border: silver 3px double;
+}
+
+.biplane-description {
+  background: rgba(255, 255, 255, 0.5);
+  height: 60%;
+}
+
+/* -- TRAVEL -- */
+.location {
+  background: white;
+  display: flex;
+
+  box-shadow: 0 0 5px #333;
+  margin-bottom: 15px;
+  padding: 15px;
+  width: 700px;
+  margin: 50px auto;
+  transform: scale(1.1);
+  transition: all 0.25s ease;
+}
+
+.location:hover {
+  transform: scale(1.2);
+}
+
+.location img {
+  width: 150px;
+  height: auto;
+}
+
+.location .travel-image {
+  text-align: center;
+  padding-right: 10px;
+  border-right: 3px silver double;
+}
+
+.location .travel-description {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 75% 25%;
+  padding: 15px;
+}
+
+.location .travel-description #paragraph {
+  text-align: left;
+  text-indent: 40px;
+  border-bottom: 3px silver dotted;
+  box-shadow: 0 0 3px #333;
+  padding: 10px;
+}
+
+.location .travel-description .detail {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  box-shadow: 0 0 3px #333;
+  background: lightgreen;
+  border: 3px rgba(0, 100, 0, 0.2) solid;
+}
+
+#locations-container > #location-bg-countryside {
+  background: url('./images/location_countryside.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 95%;
+  margin: 0 auto;
+}
+
+#locations-container > #location-bg-country {
+  background: url('./images/location_city.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 95%;
+  margin: 0 auto;
+}
+
+#locations-container > #location-bg-world {
+  background: url('./images/location_world.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* -- ABOUT -- */
+#experience-bg {
+  background: lightcyan;
+  border: 1px lightcyan solid;
+}
+
+#experience {
+  background: url('./images/clouds-bg.jpg');
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-size: cover;
+  width: 90%;
+  max-width: 1100px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px #333;
+  margin: 20px auto 20px auto;
+}
+
+#experience {
+  color: white;
+  text-shadow: 0 0 3px #333;
+}
+
+#experience p {
+  padding: 0 25px 0 25px;
+}
+
+#video-container {
+  padding: 20px 0 20px 0;
+  width: 100%;
+  margin: 0 auto;
+  height: 450px;
+}
+
+#video {
+  margin: 0 auto;
+  width: 800px;
+  height: 425px;
+}
+
+footer {
+  width: 100%;
+  background: rgba(0, 100, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 5px 0 5px 0;
+}
+
+@media (max-width: 1200px) {
+  .shadow-bg {
+    box-shadow: none;
+  }
+
+  .second-bg {
+    background: none;
+  }
+}
+
+@media (max-width: 900px) {
+  #biplanes #biplanes-grid {
+    grid-template-columns: 50% 50%;
+  }
+
+  .grid {
+    margin-bottom: 30px;
+  }
+
+  .grid img {
+    min-width: 150px;
+    min-height: 150px;
+  }
+
+  .grid:last-child {
+    margin-left: 60%;
+  }
+
+  #video-container {
+    height: 275px;
+  }
+
+  #video {
+    width: 400px;
+    height: 250px;
+  }
+
+  .location {
+    flex-direction: column;
+    width: 300px;
+    margin: 75px auto;
+  }
+
+  .location img {
+    width: 150px;
+    height: auto;
+  }
+
+  .location .travel-image {
+    text-align: center;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    border-right: none;
+    border-bottom: 3px silver double;
+  }
+
+  .location .travel-description {
+    text-align: left;
+    text-indent: 40px;
+    padding: 15px;
+  }
+
+  .location .travel-description .detail {
+    flex-direction: column;
+    padding: 10px 0 10px 0;
+  }
+
+  .detail p {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 550px) {
+  #header #header-img {
+    margin: 3px 0 0 2vw;
+    height: 26px;
+  }
+
+  #header #nav-bar .nav-link {
+    padding: 0 2vw 0 2vw;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    transition: all 0.25s ease;
+  }
+
+  #header form {
+    position: absolute;
+    text-align: center;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #header form #email {
+    min-width: 200px;
+  }
+
+  #biplanes #biplanes-grid {
+    grid-template-columns: 100%;
+  }
+
+  section h1 {
+    padding-top: 50px;
+    font-size: 30px;
+    text-shadow: 0 0 #111;
+    color: black;
+  }
+
+  .grid {
+    margin-bottom: 30px;
+  }
+
+  .grid img {
+    min-width: 250px;
+    min-height: 250px;
+  }
+
+  .grid:last-child {
+    margin-left: 10%;
+  }
+
+  .location {
+    width: 250px;
+    margin: 75px auto;
+  }
+
+  .travel-description {
+    font-size: 15px;
+    height: 275px;
+  }
+
+  .location img {
+    width: 100px;
+    height: auto;
+  }
+
+  .location .travel-description .detail {
+    font-size: 12px;
+  }
+
+  #video-container {
+    height: 275px;
+  }
+
+  #video {
+    margin: 0 auto;
+    width: 360px;
+    height: 250px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .grid img {
+    min-width: 140px;
+    min-height: 140px;
+  }
+
+  #video-container {
+    height: 225px;
+  }
+
+  #video {
+    margin: 0 auto;
+    width: 280px;
+    height: 200px;
+  }
+}
